@@ -1,0 +1,16 @@
+<h1>Friends List</h1>
+
+<%friends.map(friend=>{%>
+    <li>
+
+<%=friend%>
+    </li>
+    
+<%})%>
+
+<form action="/addfriends" method="POST">
+<input type="text" placeholder="name" name="newfriend">
+<!-- new friend will be key as you enter name as bob or other names -->
+<button>I made a friend!!!</button>
+
+</form>
